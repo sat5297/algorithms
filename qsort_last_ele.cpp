@@ -9,9 +9,13 @@ using namespace std;
 long int partition(long int [] ,long int ,long int );
 void swap(long int*,long int *);
 
-//This is a sorting methodology in which the array is sorted by dividing the array in 2-parts corresponding to the index of the sorted element in the array.(sorted element is the pivot element with index pi)
+/*
+This is a sorting methodology in which the array is sorted by dividing the array in 2-parts corresponding to the index of the
+sorted element in the array.(sorted element is the pivot element with index pi)
 
-//The pi is index of the pivot, the elements which are atmost pivot are to the left of the pi and the elements greater than pivot are on the right of the pi.
+The pi is index of the pivot, the elements which are atmost pivot are to the left of the pi and the elements greater than pivot 
+are on the right of the pi.
+*/
 
 void swap(long int *a,long int *b)
 {
@@ -31,7 +35,14 @@ void quicksort(long int arr[],long int low,long int high)
     }
  }
 
-//The partition function gives the value of index about which the partition needs to be performed(the pi value), pivot element is at correct position whereas the elements to the  left and right of the index pi needs to be sorted using the same mechanism.
+
+/*
+The partition function gives the value of index about which the partition needs to be performed(the pi value), 
+pivot element is at correct position whereas the elements to the  left and right of the index pi needs to be sorted using the
+same mechanism.
+*/
+
+
 long int partition(long int arr[],long int low,long int high)
  {
    long int pivot = arr[high];
