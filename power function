@@ -1,0 +1,30 @@
+//To calculate the power of a function of a number efficiently.
+/*
+A number can only be even or odd so we have only 2 options
+Either even or odd so if the number is even then we can square the number and reduce power by 2.
+If it is odd we reduce power by 1 and call the function with number multiplied with squared number 
+and power reduced by 2.
+This function uses recursive approach.
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+typedef unsigned long long int ull;
+
+ull powerfunction(ull num, ull power)
+{
+if(power == 0)
+  return 1;
+else if(power % 2 == 0)
+  return powerfunction(num*num,power/2);
+else
+  return num*powerfunction(num*num,(power-1)/2);
+}
+//Driver Function
+int main()
+{
+ull ans;
+ans = powerfunction(233,5);
+cout << ans;
+return 0;
+}
