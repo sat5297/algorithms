@@ -1,0 +1,6 @@
+/*
+The factorial of large numbers can be calculated by using an array to store integers and then incrementing the size of the
+array to increase the size of the accessible size of the array.
+In this way we can calcualte the factorial of even larger numbers and we can allocate the memory for the array according our
+convinience and we are good to go inorder to calculate the factorial.
+*/
