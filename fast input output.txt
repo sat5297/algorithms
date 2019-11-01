@@ -1,0 +1,10 @@
+/*
+this code is used for fast input output as cin cout are a bit slow compared to sacnf and printf so add this snippet inside 
+main when starting.
+*/
+
+ios_base::sync_with_stdio(false);
+	cin.tie(NULL);
+  
+  
+  use this for fast input output.
